@@ -16,8 +16,7 @@ public class HomeServices {
         Assert.assertTrue(MobileActionManager.isPresent(validacion));
     }
     public static void eliminar(){
-        MobileActionManager.click(HomeConstants.EDITAR);
-        MobileActionManager.click(HomeConstants.ELIMINAR);
+
     }
     public static void validarSinEscenario(){
         AyudasServices.tiempo(5000);

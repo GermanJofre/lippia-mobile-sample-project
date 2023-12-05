@@ -14,7 +14,6 @@ public class EntradaTiempoFechasServices {
         ComunEntradaService.ingresarDatos(hora, minutos);
     }
     public static void ingresarFechas(String fecha) {
-        MobileActionManager.click(EntradaTiempoFechaConstants.SIGUIENTE);
         MobileActionManager.click(EntradaTiempoFechaConstants.DIA, fecha);
     }
     public static void guardarFechayHora() {

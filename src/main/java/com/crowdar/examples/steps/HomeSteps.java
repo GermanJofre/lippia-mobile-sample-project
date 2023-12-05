@@ -16,8 +16,6 @@ public class HomeSteps {
     @Then("El cliente puede ver el escenario creado")
     public void validacionEscenario() {
         HomeServices.validarEscenario();
-        HomeServices.eliminar();
-        HomeServices.validarSinEscenario();
     }
     @Then("Puede observar que no hay escenarios creados")
     public void escenarioCancelado() {

@@ -9,8 +9,8 @@ Feature: Entrada
   @Tiempo
   Scenario Outline: El cliente ingresa horas
     When Agrega un nombre al proyecto '<Proyecto>'
-    And Ingresa horas trabajadas '<Horas>' : '<Minutos>'
-    And Guarda el escenario
+    And Ingresa sus horas trabajadas '<Horas>' : '<Minutos>'
+    And Guarda el escenario creado
     Then El cliente puede ver el escenario creado
 
     Examples:
@@ -21,11 +21,11 @@ Feature: Entrada
   Scenario Outline: El cliente ingresa fecha
     When Agrega un nombre al proyecto '<Proyecto>'
     And Clickea la seccion fechas con horas
-    And Ingresa hora de inicio '<HoraI>' : '<MinutosI>'
-    And Ingresa hora de finalizacion '<HoraF>' : '<MinutosF>'
-    And Ingresa una fecha '<Fecha>'
-    And Guarda la fecha y hora
-    And Guarda el escenario
+    And Ingresa una hora de inicio '<HoraI>' : '<MinutosI>'
+    And Ingresa una hora de finalizacion '<HoraF>' : '<MinutosF>'
+    And Ingresa fecha '<Fecha>'
+    And Clicke en guarda la fecha y hora
+    And Guarda el escenario creado
     Then El cliente puede ver el escenario creado
 
     Examples:
@@ -35,6 +35,6 @@ Feature: Entrada
   @Cancelacion
   Scenario: El cliente quiere cancelar sus acciones
     And Agrega un nombre al proyecto 'Cancelacion'
-    And Ingresa horas trabajadas '17' : '27'
+    And Ingresa sus horas trabajadas '17' : '27'
     And Cancela sus acciones para volver al inicio
     Then Puede observar que no hay escenarios creados

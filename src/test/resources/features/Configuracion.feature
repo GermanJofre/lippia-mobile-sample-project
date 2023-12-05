@@ -1,5 +1,5 @@
 @Configuraciones
-Feature: @Configuraciones
+Feature: Configuraciones
 
   Background:
     Given EL cliente se encuentra en la aplicacion

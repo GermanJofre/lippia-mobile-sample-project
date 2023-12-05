@@ -9,7 +9,7 @@ public class EntradaTiempoSteps {
     public void nombre(String nombre) {
         EntradaService.nombre(nombre);
     }
-    @And("Ingresa horas trabajadas '(.*)' : '(.*)'$")
+    @And("Ingresa sus horas trabajadas '(.*)' : '(.*)'$")
     public void horasTrabajo(String hora, String minutos) {
         EntradaService.horasTrabajo(hora,minutos);
     }
@@ -17,7 +17,7 @@ public class EntradaTiempoSteps {
     public void fechasyhoras() {
         EntradaService.fechasyhoras();
     }
-    @And("Guarda el escenario")
+    @And("Guarda el escenario creado")
     public void guardar() {
         EntradaService.guardar();
     }
