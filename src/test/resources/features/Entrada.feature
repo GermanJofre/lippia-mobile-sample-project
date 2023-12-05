@@ -23,14 +23,14 @@ Feature: Entrada
     And Clickea la seccion fechas con horas
     And Ingresa una hora de inicio '<HoraI>' : '<MinutosI>'
     And Ingresa una hora de finalizacion '<HoraF>' : '<MinutosF>'
-    And Ingresa fecha '<Fecha>'
+    And Ingresa fecha '<dia>' '<mes>' y '<ano>'
     And Clicke en guarda la fecha y hora
     And Guarda el escenario creado
     Then El cliente puede ver el escenario creado
 
     Examples:
-      | HoraI | MinutosI | HoraF | MinutosF | Proyecto | Fecha            |
-      | 10    | 27       | 07    | 02       | Random   | 07 December 2023 |
+      | HoraI | MinutosI | HoraF | MinutosF | Proyecto | dia | mes | ano  |
+      | 10    | 27       | 07    | 02       | Random   | 27  | 10  | 2024 |
 
   @Cancelacion
   Scenario: El cliente quiere cancelar sus acciones

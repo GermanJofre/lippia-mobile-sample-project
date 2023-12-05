@@ -70,9 +70,9 @@ public class ClockifyAPI {
         }
     }
 
-    public void eliminarEntradaHoraria(String workspaceId,String timeEntryId) throws IOException {
+    public void eliminarEntradaHoraria(String workspaceId,String entradasHorariaId) throws IOException {
         Request request = new Request.Builder()
-                .url("https://api.clockify.me/api/v1/workspaces/" + workspaceId + "/time-entries/" + timeEntryId)
+                .url("https://api.clockify.me/api/v1/workspaces/" + workspaceId + "/time-entries/" + entradasHorariaId)
                 .addHeader("X-Api-Key", apiKey)
                 .delete()
                 .build();

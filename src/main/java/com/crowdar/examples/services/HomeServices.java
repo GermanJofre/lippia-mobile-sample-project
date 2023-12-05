@@ -15,9 +15,6 @@ public class HomeServices {
         String validacion = EntradaTiempoConstants.NOMBRE.replace("JutsuDeReemplazo",proyecto);
         Assert.assertTrue(MobileActionManager.isPresent(validacion));
     }
-    public static void eliminar(){
-
-    }
     public static void validarSinEscenario(){
         AyudasServices.tiempo(5000);
         Assert.assertTrue(MobileActionManager.isVisible(HomeConstants.SIN_ENTRADAS));
